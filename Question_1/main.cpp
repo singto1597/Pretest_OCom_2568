@@ -38,6 +38,7 @@ int main(){
 
 
 
+
     //count ++;
     if (StrLoop == ""){
         StrLoop = input;
