@@ -16,7 +16,7 @@ int main(){
                 minStr = 1000000;
                 break;
             }
-            if (sub == input.substr(j, i)){
+            if (sub == input.substr(j, i) && i != 1){
                 //cout << input.substr(j, i) << endl;
 
                 if (minStr >= i){
@@ -25,16 +25,19 @@ int main(){
                     count++;
 
                 }
-                if (count > 3){
+                if (count >= 10){
                     break;
                 }
 
             }
         }
-        if (count > 3){
+        if (count >= 10){
             break;
         }
     }
+
+
+
     //count ++;
     if (StrLoop == ""){
         StrLoop = input;
