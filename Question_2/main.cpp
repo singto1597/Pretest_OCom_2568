@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     int n;
     cin >> n;
-    int perfectPoint = 3, GreatPoint = 2; GoodPoint = 1;
+    long long perfectPoint = 3, GreatPoint = 2, GoodPoint = 1;
     string BestPerson;
     long long Bestpoint = -10000;
     for (int i = 0; i < n; i++){
@@ -18,6 +18,6 @@ int main(){
             Bestpoint = point;
             BestPerson = name;
         }
-        cout << name;
     }
+    cout << BestPerson;
 }
